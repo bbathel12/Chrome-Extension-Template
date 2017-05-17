@@ -31,3 +31,10 @@ div#main-about-text {
     margin-top: 10px;
     text-align: center;
 }
+
+div#selector{
+    background-color:white;
+    border:1px solid grey;
+    width:120px;
+    height:40px;
+}

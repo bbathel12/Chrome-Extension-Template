@@ -20,7 +20,7 @@ var callback1 = function(data){
 var query_callback = function(aryTabs){
 	for(var i = 0;i < aryTabs.length; i++){
 		var intTabId = aryTabs[i].id
-		var message = $('#selector').val();
+		var message = $('#selector').text();
 		chrome.tabs.sendMessage(intTabId, message, {},function(){})
 	}
 }

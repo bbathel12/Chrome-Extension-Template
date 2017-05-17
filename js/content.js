@@ -6,7 +6,7 @@
 */
 var callback = function(strMessage, sender, sendResponse) {
 	console.log('message: '+strMessage)
-	$(message).css({'background-color':'#ffccff'})
+	$(strMessage).css({'background-color':'rgba(255, 0, 0, 0.3)'})
 	console.log('message recieved')
 };
 
@@ -14,4 +14,5 @@ var callback = function(strMessage, sender, sendResponse) {
 $(document).ready(function(){
 	// attach the onMessage listener with the callback function
 	chrome.runtime.onMessage.addListener(callback)
+	console.log('listener added')
 })
